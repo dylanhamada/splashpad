@@ -167,36 +167,39 @@ a:visited {
     background: no-repeat center/contain url(../assets/images/water_drop_black_24dp.svg);
     display: inline-block;
     height: 40px;
+    margin-right: 10px;
     width: 40px;
     vertical-align: middle;
 }
 
-.links,
-.user {
-    display: inline-block;
-    height: 100%;
-}
-
-.links {
-    flex: 2;
-}
-
-.user {
-    flex: 1;
-}
-
 .search {
-    box-sizing: border-box;
-    flex: 6;
-    height: 40px;
-    padding: 0 15px;
+    flex: 2;
 }
 
 .search input {
     background-color: #eee;
     border: none;
     border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 20px;
     width: 100%;
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 40px;
+    justify-content: center;
+}
+
+.links li {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 12px;
 }
 
 .menu {
