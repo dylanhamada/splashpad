@@ -302,3 +302,28 @@ a:hover {
     display: flex;
     height: 56px;
 }
+
+.second-links {
+    justify-content: start;
+    overflow: hidden;
+}
+
+.second-links li {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 35px;
+    padding: 0 12.5px;
+    white-space: nowrap;
+}
+
+.second-links li:first-of-type {
+    border-left: 1px solid #d1d1d1;
+    padding-left: 25px;
+}
+
+.featured {
+    top: 72px;
+    font-size: 10px;
+    position: absolute;
+}
