@@ -207,9 +207,13 @@ a:hover {
     width: 100%;
 }
 
+.search input:hover {
+    border: 1px solid #bdbdbd;
+}
+
 .search input:focus {
     background-color: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #bdbdbd;
 }
 
 .links {
@@ -292,7 +296,7 @@ a:hover {
     color: #111;
     display: flex;
     justify-content: center;
-    min-width: 100px;
+    min-width: 90px;
 }
 
 .editorial span {
