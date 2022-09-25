@@ -141,6 +141,18 @@ body {
     font-size: 14px;
 }
 
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
 a,
 a:visited {
     color: #767676;
@@ -331,3 +343,67 @@ a:hover {
     font-size: 10px;
     position: absolute;
 }
+
+.marquee {
+    align-items: center;
+    background-image: url(../assets/images/waves-tim-marshall.jpg);
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    justify-content: center;
+}
+
+.marquee-overlay {
+    background-color: #0000000e;
+    height: 590px;
+    position: absolute;
+    width: 100%;
+}
+
+.marquee-container {
+    color: #fff;
+    width: 850px;
+}
+
+.marquee-container h2:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.marquee-search {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.marquee-search img {
+    cursor: pointer;
+    height: 30px;
+    opacity: 50%;
+    padding: 0 15px;
+    position: absolute;
+}
+
+.marquee-search input {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 50px;
+    outline: none;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.marquee-container a {
+    color: #fffc;
+}
+
+.marquee-container a:hover {
+    color: #fff;
+}
+
+.marquee-footer {}
