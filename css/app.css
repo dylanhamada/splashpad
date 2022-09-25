@@ -363,7 +363,7 @@ a:hover {
 }
 
 .marquee-overlay {
-    background-color: #0000000e;
+    background-color: #0000001e;
     height: 590px;
     position: absolute;
     width: 100%;
@@ -415,6 +415,7 @@ a:hover {
     box-sizing: border-box;
     color: #ffffff8c;
     display: flex;
+    font-size: 13px;
     margin-bottom: 25px;
     padding: 0 20px 0 20px;
     width: 100%;
