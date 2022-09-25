@@ -352,7 +352,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 590px;
-    justify-content: center;
+}
+
+.marquee a {
+    color: #fffc;
+}
+
+.marquee a:hover {
+    color: #fff;
 }
 
 .marquee-overlay {
@@ -360,11 +367,17 @@ a:hover {
     height: 590px;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 
 .marquee-container {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
     width: 850px;
+    z-index: 10;
 }
 
 .marquee-container h2:nth-of-type(2) {
@@ -398,12 +411,21 @@ a:hover {
     width: 100%;
 }
 
-.marquee-container a {
+.marquee-footer {
+    box-sizing: border-box;
+    color: #ffffff8c;
+    display: flex;
+    margin-bottom: 25px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+.marquee-footer span {
+    flex-grow: 1;
+}
+
+.marquee-footer strong {
     color: #fffc;
+    cursor: zoom-in;
 }
-
-.marquee-container a:hover {
-    color: #fff;
-}
-
-.marquee-footer {}
