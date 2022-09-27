@@ -137,6 +137,8 @@ table {
 /* CSS Reset ends here */
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -429,4 +431,23 @@ a:hover {
 .marquee-footer strong {
     color: #fffc;
     cursor: zoom-in;
+}
+
+.showcase {
+    align-self: center;
+    column-count: 3;
+    column-gap: 1em;
+    cursor: zoom-in;
+    margin: 40px 10px 0 10px;
+    max-width: 1300px;
+    min-width: 80%;
+}
+
+.image {
+    box-sizing: border-box;
+    padding: 0.5em 0;
+}
+
+.image img {
+    width: 100%;
 }
