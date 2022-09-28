@@ -436,18 +436,36 @@ a:hover {
 .showcase {
     align-self: center;
     column-count: 3;
-    column-gap: 1em;
-    cursor: zoom-in;
-    margin: 40px 10px 0 10px;
+    column-gap: 1.5em;
+    margin: 50px 10px;
     max-width: 1300px;
     min-width: 80%;
+    position: relative;
 }
 
 .image {
-    box-sizing: border-box;
-    padding: 0.5em 0;
+    cursor: zoom-in;
+    margin-bottom: 1.5em;
+    position: inherit;
 }
 
 .image img {
+    display: block;
+    height: 100%;
     width: 100%;
+}
+
+.image-overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0.34) 100%);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.image-overlay:hover {
+    opacity: 1;
 }
