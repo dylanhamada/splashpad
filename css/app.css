@@ -449,10 +449,64 @@ a:hover {
     position: inherit;
 }
 
+.image:hover .image-overlay {
+    opacity: 1;
+}
+
 .image img {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+.image-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.image-buttons button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+    margin: 2px;
+    width: 40px;
+}
+
+.image-buttons svg {
+    opacity: 60%;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+
+.add {
+    box-sizing: border-box;
+    padding-top: 2px;
+}
+
+.download {
+    box-sizing: border-box;
+    padding-top: 2px;
 }
 
 .image-overlay {
@@ -464,8 +518,4 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 5;
-}
-
-.image-overlay:hover {
-    opacity: 1;
 }
