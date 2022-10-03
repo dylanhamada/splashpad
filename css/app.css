@@ -350,7 +350,7 @@ a:hover {
     align-items: center;
     background-image: url(../assets/images/waves-tim-marshall.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 590px;
@@ -580,4 +580,20 @@ a:hover {
     top: 0;
     width: 100%;
     z-index: 5;
+}
+
+@media (max-width: 1300px) {
+    .marquee-container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .marquee-footer span:nth-of-type(2) {
+        display: none;
+    }
+
+    .showcase {
+        column-count: 2;
+    }
 }
