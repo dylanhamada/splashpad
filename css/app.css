@@ -303,6 +303,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     height: 56px;
+    overflow-x: hidden;
 }
 
 .editorial {
@@ -323,7 +324,6 @@ a:hover {
 
 .second-links {
     justify-content: start;
-    overflow: hidden;
 }
 
 .second-links li {
@@ -337,13 +337,13 @@ a:hover {
 
 .second-links li:first-of-type {
     border-left: 1px solid #d1d1d1;
+    display: flex;
+    flex-direction: column;
     padding-left: 25px;
 }
 
 .featured {
-    top: 72px;
     font-size: 10px;
-    position: absolute;
 }
 
 .marquee {
@@ -589,11 +589,30 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
+
+    .menu {
+        margin-right: 10px;
+    }
+
+    .second-nav {
+        overflow-x: scroll;
+    }
+
     .marquee-footer span:nth-of-type(2) {
         display: none;
     }
 
     .showcase {
         column-count: 2;
+    }
+}
+
+@media (max-width: 830px) {
+    .top-links {
+        display: none;
+    }
+
+    .submit-photo {
+        display: none;
     }
 }
