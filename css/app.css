@@ -616,3 +616,29 @@ a:hover {
         display: none;
     }
 }
+
+@media (max-width: 700px) {
+    .marquee {
+        height: 300px;
+    }
+
+    .marquee-container {
+        box-sizing: border-box;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .marquee-container h1 {
+        font-size: 24px;
+    }
+
+    .marquee-container p {
+        font-size: 15px;
+    }
+
+    .marquee-container p,
+    .marquee-search,
+    .marquee-footer {
+        display: none;
+    }
+}
