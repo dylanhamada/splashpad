@@ -136,6 +136,12 @@ table {
 
 /* CSS Reset ends here */
 
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -165,35 +171,25 @@ a:hover {
     color: #111;
 }
 
-.material-icons.md-36 {
-    font-size: 36px;
-}
-
-.material-icons.md-48 {
-    font-size: 48px;
-}
+/* Top Navigation Bar */
 
 .top-nav {
     align-items: center;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 12px;
 }
 
 .logo {
     background: no-repeat center/contain url(../assets/images/water_drop_black_24dp.svg);
-    box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
     margin-right: 10px;
     min-height: 40px;
     min-width: 40px;
-    vertical-align: middle;
 }
 
 .search {
-    box-sizing: border-box;
     display: flex;
     min-width: 100px;
     padding-left: 5px;
@@ -213,7 +209,6 @@ a:hover {
     background-color: #eee;
     border: 1px solid #eee;
     border-radius: 20px;
-    box-sizing: border-box;
     font-size: 14px;
     height: 40px;
     outline: none;
@@ -235,7 +230,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    vertical-align: middle;
 }
 
 .top-links {
@@ -245,7 +239,6 @@ a:hover {
 
 .top-links li {
     align-items: center;
-    box-sizing: border-box;
     display: flex;
     height: 100%;
     padding: 0 12px;
@@ -268,7 +261,6 @@ a:hover {
     background-color: #fff;
     border: 1px solid #d1d1d1;
     border-radius: 4px;
-    box-sizing: border-box;
     color: #767676;
     cursor: pointer;
     font-size: 14px;
@@ -296,12 +288,12 @@ a:hover {
     opacity: 90%;
 }
 
+/* Second Nav Bar */
+
 .second-nav {
     align-items: center;
-    box-sizing: border-box;
     color: #767676;
     display: flex;
-    flex-direction: row;
     height: 56px;
     overflow-x: hidden;
 }
@@ -317,18 +309,12 @@ a:hover {
 .editorial span {
     align-items: center;
     border-bottom: 2px solid #111;
-    box-sizing: border-box;
     display: flex;
     height: 56px;
 }
 
-.second-links {
-    justify-content: start;
-}
-
 .second-links li {
     align-items: center;
-    box-sizing: border-box;
     display: flex;
     height: 35px;
     padding: 0 12.5px;
@@ -345,6 +331,8 @@ a:hover {
 .featured {
     font-size: 10px;
 }
+
+/* Marquee */
 
 .marquee {
     align-items: center;
@@ -388,7 +376,6 @@ a:hover {
 
 .marquee-search {
     align-items: center;
-    box-sizing: border-box;
     display: flex;
     margin: 0 0 20px 0;
     width: 100%;
@@ -405,7 +392,6 @@ a:hover {
 .marquee-search input {
     border: none;
     border-radius: 4px;
-    box-sizing: border-box;
     font-size: 14px;
     height: 50px;
     outline: none;
@@ -414,7 +400,6 @@ a:hover {
 }
 
 .marquee-footer {
-    box-sizing: border-box;
     color: #ffffff8c;
     display: flex;
     font-size: 13px;
@@ -432,6 +417,8 @@ a:hover {
     color: #fffc;
     cursor: zoom-in;
 }
+
+/* Showcase */
 
 .showcase {
     align-self: center;
@@ -513,19 +500,16 @@ a:hover {
     display: flex;
 }
 
-#like {
-    box-sizing: border-box;
+.like {
     margin-right: 6px;
     padding-top: 6px;
 }
 
-#add {
-    box-sizing: border-box;
+.add {
     padding-top: 2px;
 }
 
-#download {
-    box-sizing: border-box;
+.download {
     padding-top: 2px;
 }
 
@@ -633,7 +617,6 @@ a:hover {
     }
 
     .marquee-container {
-        box-sizing: border-box;
         padding: 0 1em;
         width: 100%;
     }
@@ -668,7 +651,6 @@ a:hover {
 
     .image-user-sm {
         align-items: center;
-        box-sizing: border-box;
         display: flex;
         margin: 50px 10px 10px 10px;
     }
@@ -683,7 +665,6 @@ a:hover {
     }
 
     .buttons-sm {
-        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         margin: 10px 10px 30px 10px;
