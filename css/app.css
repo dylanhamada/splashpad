@@ -582,6 +582,14 @@ a:hover {
     z-index: 5;
 }
 
+.image-user-sm {
+    display: none;
+}
+
+.buttons-sm {
+    display: none;
+}
+
 @media (max-width: 1300px) {
     .marquee-container {
         width: 65%;
@@ -618,7 +626,9 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-    .marquee {
+
+    .marquee,
+    .marquee-overlay {
         height: 300px;
     }
 
@@ -640,5 +650,97 @@ a:hover {
     .marquee-search,
     .marquee-footer {
         display: none;
+    }
+
+    .showcase {
+        column-count: 1;
+        margin: 0;
+        min-width: 100%;
+    }
+
+    .image-buttons {
+        display: none;
+    }
+
+    .image-overlay {
+        display: none;
+    }
+
+    .image-user-sm {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        margin: 50px 10px 10px 10px;
+    }
+
+    .user-image {
+        background-color: #bdbdbd;
+    }
+
+    .user-info a {
+        color: #000;
+        opacity: 100%;
+    }
+
+    .buttons-sm {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 10px 30px 10px;
+    }
+
+    .buttons-sm button {
+        background-color: #fff;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        height: 32px;
+        width: 40px;
+    }
+
+    .buttons-sm button:hover,
+    .button-sm button:focus {
+        border-color: #000;
+    }
+
+    .buttons-sm button:hover svg,
+    .button-sm button:focus svg {
+        opacity: 100%;
+    }
+
+    .buttons-left {
+        align-items: center;
+        display: flex;
+    }
+
+    .buttons-left svg {
+        opacity: 60%;
+    }
+
+    .buttons-right {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+    }
+
+    .buttons-right .download-sm {
+        border-radius: 4px 0 0 4px;
+        border-width: 1px 0.5px 1px 1px;
+        color: #767676;
+        font-size: 14px;
+        width: 85px;
+    }
+
+    .buttons-right .download-sm:hover,
+    .buttons-right .download-sm:focus {
+        color: #000;
+    }
+
+    .buttons-right .options-sm {
+        border-radius: 0 4px 4px 0;
+        padding-top: 5px;
+    }
+
+    .buttons-right .options-sm svg {
+        opacity: 75%;
     }
 }
